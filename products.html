@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - ShoppingFever</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+        <nav class="navbar" id="navbar">
+            <a class="title" href="index.html">
+                <span>ShoppingFever</span> </a>
+                <button class="menu" id="menu"> ☰ </button>
+            <div class="nav-links" id="navLinks">
+            <ul class="links">
+<li><a href="index.html">Home</a></li>
+<li><a class="active" href="products.html">Products</a></li>
+<li><a href="cart.html">Cart</a></li>
+<li><a href="orders.html">Orders</a></li>
+<li><a href="index.html#about">About</a></li>
+            </ul>
+           
+        </div>
+         <button class="btn theme-btn" id="theme-btn">Dark mode</button>
+        </nav>
+
+    <main class="main">
+        <section class="section">
+            <div class="section-heading">
+                <div>
+                    <p class="desc">CATALOG</p>
+                    <h2>All Products</h2>
+                </div>
+                <span class="result-count" id="resultCount">0 products</span>
+            </div>
+
+            <div class="toolbar">
+                <input type="text" id="filterInput" maxlength="100" placeholder="Filter products...">
+                <select id="categorySelect">
+                    <option value="all">All categories</option>
+                </select>
+                <select id="sortSelect">
+                    <option value="default">Sort by</option>
+                    <option value="price-asc">Price: low to high</option>
+                    <option value="price-desc">Price: high to low</option>
+                </select>
+                <button type="button" class="toolbar-btn" id="favToggle">♡ Favorites only</button>
+            </div>
+
+            <div class="product-grid" id="productGrid"></div>
+            <nav class="pagination" id="pagination" aria-label="Pagination"></nav>
+
+            <p class="loading" id="productsLoading">Loading products...</p>
+            <p class="error-state" id="productsError" hidden>Failed to load products.</p>
+            <p class="empty-state" id="emptyState" hidden>No products match your search.</p>
+        </section>
+    </main>
+    <script src="script/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orders - ShoppingFever</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+<nav class="navbar" id="navbar">
+    <a class="title" href="index.html"><span>ShoppingFever</span></a>
+    <button class="menu" id="menu"> ☰ </button>
+    <div class="nav-links" id="navLinks">
+        <ul class="links">
+<li><a href="index.html">Home</a></li>
+<li><a href="products.html">Products</a></li>
+<li><a href="cart.html">Cart</a></li>
+<li><a class="active" href="orders.html">Orders</a></li>
+<li><a href="index.html#about">About</a></li>
+        </ul>
+    </div>
+    <button class="btn theme-btn" id="theme-btn">Dark mode</button>
+</nav>
+<main class="main">
+<section class="section">
+    <div class="section-heading">
+        <div><p class="desc">HISTORY</p><h2>My orders</h2></div>
+    </div>
+    <div class="toolbar">
+        <select id="ordersFilter" aria-label="Filter by status">
+            <option value="all">All orders</option>
+            <option>Processing</option>
+            <option>Shipped</option>
+            <option>Delivered</option>
+            <option>Cancelled</option>
+        </select>
+    </div>
+    <div class="orders-list" id="ordersList"></div>
+    <p class="empty-state" id="ordersEmpty" hidden></p>
+    <p class="muted">Order status is simulated: Processing for 2 minutes (you can cancel), Shipped until minute 5, then Delivered.</p>
+</section>
+</main>
+<script src="script/script.js"></script>
+</body>
+</html>

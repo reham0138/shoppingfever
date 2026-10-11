@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart - ShoppingFever</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+<nav class="navbar" id="navbar">
+    <a class="title" href="index.html"><span>ShoppingFever</span></a>
+    <button class="menu" id="menu"> ☰ </button>
+    <div class="nav-links" id="navLinks">
+        <ul class="links">
+<li><a href="index.html">Home</a></li>
+<li><a href="products.html">Products</a></li>
+<li><a class="active" href="cart.html">Cart</a></li>
+<li><a href="orders.html">Orders</a></li>
+<li><a href="index.html#about">About</a></li>
+        </ul>
+    </div>
+    <button class="btn theme-btn" id="theme-btn">Dark mode</button>
+</nav>
+<main class="main">
+<section class="section">
+    <div class="section-heading">
+        <div><p class="desc">YOUR BAG</p><h2>Shopping Cart</h2></div>
+        <button class="clear-btn" id="clearCart" type="button">Clear cart</button>
+    </div>
+    <div id="cartContent" hidden>
+        <div class="cart-layout">
+            <div class="cart-items" id="cartItems"></div>
+            <aside class="summary-card">
+                <h3>Order summary</h3>
+                <p class="summary-row"><span>Total</span><strong id="cartTotal">$0.00</strong></p>
+                <a class="product-btn link-btn" href="checkout.html">Go to checkout</a>
+            </aside>
+        </div>
+    </div>
+    <p class="empty-state" id="cartEmpty" hidden>Your cart is empty. <a class="back-link" href="products.html">Browse products</a></p>
+</section>
+</main>
+<script src="script/script.js"></script>
+</body>
+</html>

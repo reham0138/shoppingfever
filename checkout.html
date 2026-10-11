@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - ShoppingFever</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+<nav class="navbar" id="navbar">
+    <a class="title" href="index.html"><span>ShoppingFever</span></a>
+    <button class="menu" id="menu"> ☰ </button>
+    <div class="nav-links" id="navLinks">
+        <ul class="links">
+<li><a href="index.html">Home</a></li>
+<li><a href="products.html">Products</a></li>
+<li><a href="cart.html">Cart</a></li>
+<li><a href="orders.html">Orders</a></li>
+<li><a href="index.html#about">About</a></li>
+        </ul>
+    </div>
+    <button class="btn theme-btn" id="theme-btn">Dark mode</button>
+</nav>
+<main class="main">
+<section class="section">
+    <div class="section-heading">
+        <div><p class="desc">CHECKOUT</p><h2>Place your order</h2></div>
+    </div>
+    <div class="checkout-layout">
+        <form class="checkout-form" id="checkoutForm" novalidate>
+            <label>Full name<input type="text" name="name" maxlength="60" autocomplete="name"></label>
+            <label>Email<input type="email" name="email" maxlength="100" autocomplete="email"></label>
+            <label>Phone<input type="tel" name="phone" maxlength="20" autocomplete="tel" inputmode="tel"></label>
+            <label>Address<input type="text" name="address" maxlength="120" autocomplete="street-address"></label>
+            <label>City<input type="text" name="city" maxlength="50" autocomplete="address-level2"></label>
+            <label>Payment method
+                <select name="payment" id="payment">
+                    <option>Cash on delivery</option>
+                    <option>Credit card (simulated)</option>
+                </select>
+            </label>
+            <div class="card-fields" id="cardFields" hidden>
+                <label>Card number<input type="text" name="cardNumber" inputmode="numeric" autocomplete="cc-number" placeholder="1234 5678 9012 3456"></label>
+                <div class="card-row">
+                    <label>Expiry (MM/YY)<input type="text" name="expiry" inputmode="numeric" autocomplete="cc-exp" placeholder="MM/YY"></label>
+                    <label>CVV<input type="password" name="cvv" inputmode="numeric" autocomplete="cc-csc" placeholder="123"></label>
+                </div>
+                <small class="muted">Simulated payment: card details are only validated, never saved.</small>
+            </div>
+            <p class="form-msg" id="checkoutMsg" hidden></p>
+            <button class="product-btn" type="submit">Place order</button>
+        </form>
+        <aside class="summary-card">
+            <h3>Your items</h3>
+            <ul class="summary-list" id="orderSummary"></ul>
+            <p class="summary-row"><span>Total</span><strong id="checkoutTotal">$0.00</strong></p>
+        </aside>
+    </div>
+</section>
+</main>
+<script src="script/script.js"></script>
+</body>
+</html>

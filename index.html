@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShoppingFever</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+        <nav class="navbar" id="navbar">
+            <a class="title" href="#home">
+                <span>ShoppingFever</span> </a>
+                <button class="menu" id="menu"> ☰ </button>
+            <div class="nav-links" id="navLinks">
+            <ul class="links">
+<li><a class="active" href="index.html">Home</a></li>
+<li><a href="products.html">Products</a></li>
+<li><a href="cart.html">Cart</a></li>
+<li><a href="orders.html">Orders</a></li>
+<li><a href="#about">About</a></li>
+            </ul>
+           
+        </div>
+         <button class="btn theme-btn" id="theme-btn">Dark mode</button>
+        </nav>
+<main class="main" id="main">
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+<div class="search">
+    <p class="desc">ALL IN ONE PLACE</p>
+
+    <h2>What are you looking for?</h2>
+
+    <div class="search-box">
+        <input 
+            type="text" 
+            id="searchInput" maxlength="100" 
+            placeholder="Search for products..."
+        >
+        <button id="searchBtn" type="button">Search</button>
+    </div>
+</div>
+               </div>
+            <!-- <div class="cards" id="results"></div>
+            <p class="empty-state" id="emptyState" hidden>No matching songs yet. Try another mood or keyword.</p>
+            <p class="empty-state" id="errorState" hidden></p>
+            <audio id="previewPlayer" preload="none"></audio> -->
+    </section>
+   <section class="section products-section" id="featured">
+    <div class="section-heading">
+        <div>
+            <p class="desc">OUR PICKS</p>
+            <h2>Featured Products</h2>
+        </div>
+
+        <a href="products.html">View all</a>
+    </div>
+
+    <div class="product-grid" id="featuredProducts">
+        <!-- Products will be added with JavaScript -->
+    </div>
+
+    <p class="loading" id="featuredLoading">Loading products...</p>
+    <p class="error-state" id="featuredError" hidden>
+        Failed to load products.
+    </p>
+</section> 
+<section class="section about" id="about">
+            <div class="about-card">
+                <p class="desc">ABOUT SHOPPINGFEVER</p>
+                <h2>Buy anything you want, any time you want</h2>
+                <p>
+ShoppingFever is a shopping platform where you can find everything you want or need. 
+                </p>
+                <div class="feature-grid">
+                    <div><strong>01</strong><span>Fast Shipping Wherever You Are </span></div>
+                    <div><strong>02</strong><span>Secure Payments</span></div>
+                    <div><strong>03</strong><span>Refund Policy </span></div>
+                    <div><strong>04</strong><span>AI powered</span></div>
+                </div>
+            </div>
+        </section>
+        <section class="section history-section" id="history">
+            <div class="section-heading">
+                <div>
+                    <p class="desc">RECENT SEARCHES</p>
+                    <h2>Your history</h2>
+                </div>
+                <button class="clear-btn" id="clearHistory" type="button">Clear</button>
+            </div>
+            <div class="history-list" id="historyList">
+                <p class="muted">Your searches will appear here.</p>
+            </div>
+        </section>
+</main>
+
+
+
+
+
+
+        <script src="script/script.js"></script>
+</body>
+
+</html>
